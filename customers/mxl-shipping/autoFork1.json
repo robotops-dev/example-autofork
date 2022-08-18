@@ -1,0 +1,23 @@
+{
+  "vision": {
+    "sensor": "ifm",
+    "workflows": [
+      {
+        "type": "ObstacleDetection",
+        "model": "tensorflowV1",
+        "filters": {}
+      },
+      {
+        "type": "Calibration"
+      }
+    ]
+  },
+  "peripherals": {
+    "foo_sensor": {
+      "hostname": "192.168.0.155",
+      "type": "RobotSensor"
+    }
+  },
+  "max_speed": 2.7,
+  "task": "InboundToReserve"
+}

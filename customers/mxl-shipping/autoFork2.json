@@ -1,0 +1,25 @@
+{
+  "vision": {
+    "sensor": "ifm",
+    "workflows": [
+      {
+        "type": "ObstableDetection",
+        "model": "tensorflowV1",
+        "filters": {},
+        "velocity_factor": 0.75
+      },
+      {
+        "type": "Calibration",
+        "model": "segmentation"
+      }
+    ]
+  },
+  "peripherals": {
+    "foo_sensor": {
+      "hostname": "192.168.0.155",
+      "type": "RobotSensor"
+    }
+  },
+  "max_speed": 0.4,
+  "task": "ReserveToForward"
+}
