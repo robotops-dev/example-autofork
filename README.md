@@ -110,3 +110,11 @@ robotops verify -v v0.1.0 customers/mxl-shipping/autoFork1.json
 # Response status: 200 OK
 # Status: VALID
 ```
+
+## Device Deployment
+
+```bash
+# This will make a new device called <device-name> if it doesn't exist already
+robotops device push-config path/to/config.json <device-name>
+
+robotops device pull-config <device-name>
