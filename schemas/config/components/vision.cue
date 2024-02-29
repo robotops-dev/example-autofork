@@ -11,13 +11,13 @@ package components
 	type: "ObstacleDetection"
 	model: "tensorflowV1"
 	filters: #WorkflowFilters
-	velocity_factor: float | *0.5
+	velocity_factor: int | float | *0.5
 }
 
 #CalibrationWorkflow: #WorkflowProto & {
 	type: "Calibration"
 	style: *"leastSquares" | "intrinsic"
-	fov: float | *0.6
+	fov: int | float | *0.6
 }
 
 #Workflow: #ObstacleDetectionWorkflow | #CalibrationWorkflow

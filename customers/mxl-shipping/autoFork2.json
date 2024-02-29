@@ -3,9 +3,8 @@
     "sensor": "ifm",
     "workflows": [
       {
-        "type": "ObstableDetection",
+        "type": "ObstacleDetection",
         "model": "tensorflowV1",
-        "filters": {},
         "velocity_factor": 0.75
       },
       {
@@ -20,6 +19,6 @@
       "type": "RobotSensor"
     }
   },
-  "max_speed": 0.4,
+  "max_speed": 4,
   "task": "ReserveToForward"
 }
